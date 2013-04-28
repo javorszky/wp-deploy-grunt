@@ -1,0 +1,23 @@
+{
+  "name": "name-your-project",
+  "version": "0.0.1",
+  "dependencies": {
+    "grunt": "*",
+    "grunt-ssh": "*",
+    "grunt-rsync": "*",
+    "grunt-shell": "*",
+    "grunt-contrib-compass": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-string-replace": "*"
+  },
+  "devDependencies": {
+    "grunt-rsync": "~0.1.1",
+    "grunt-ssh": "~0.3.1",
+    "grunt-shell": "~0.2.2",
+    "grunt-contrib-watch": "~0.3.1",
+    "grunt-contrib-compass": "~0.2.0",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-string-replace": "~0.2.4"
+  }
+}

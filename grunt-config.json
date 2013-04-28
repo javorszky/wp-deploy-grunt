@@ -1,0 +1,42 @@
+{
+	"db": {
+		"prefix": "pref_", // prefix for the wp tables (needed in the wp-config replace bit and table modifications)
+		"local": {
+			"host": "localhost", // if you need to connect to a different .sock, specify here
+			"user": "exampleuser", // the mysql user on the local computer
+			"password": "examplepw", // pw for the above
+			"database": "WPdatabase" // database in question
+		},
+		"hulk": { // name of the target, can be arbitrary, but will need to use it to access properties
+			"host": "localhost", // where does mysql live from within the remote server? (once you ssh'd into it)
+			"user": "remoteUser",
+			"password": "remoteUserPass",
+			"database": "remoteWPdb"
+		}
+
+	},
+	"ssh": {
+		"pubkey": "/Users/yourUserName/.ssh/id_rsa", // where do you store your pubkey?
+		"passphrase": "super-secret-passphrase", // you locked the key with a passphrase, right?
+		"user": "remoteUserSsh", // user you use to ssh into the remote machine
+		"host": "1.2.3.4", // IP address / host name here
+		"master": "remoteRoot" // root user on the remote machine, I needed it due to permission issues
+	},
+	"directories": {
+		"local": "/path/to/local/wordpress/install/", // where are the files? You need the trailing slash
+		"hulk": "/path/to/remote/wordpress/install/" // the directory to put files into on the remote machine. Probably /public_html/sitename/ or similar
+	},
+	"wordpress": { // all the WP settings to replace
+		"local": {
+			"site": "http://localhost/wpinstall", // If you moved WP into its own directory, these will be different
+			"home": "http://localhost/wpinstall"
+		},
+		"hulk": {
+			"site": "http://example.com",
+			"home": "http://example.com"
+		},
+		"options": {
+			"theme": "YOURTHEMENAME" // Not used currently
+		}
+	}
+}
