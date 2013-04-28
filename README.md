@@ -37,3 +37,4 @@ This is provided as-is. I'm still figuring out the best way to do stuff, and occ
 * make sure it replaces the guid paths in the database as well
 * implement the serialized array replacements similarly to [http://interconnectit.com/products/search-and-replace-for-wordpress-databases/](http://interconnectit.com/products/search-and-replace-for-wordpress-databases/)
 * make the config file more sane
+* take feedback on board

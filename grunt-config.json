@@ -36,7 +36,7 @@
 			"home": "http://example.com"
 		},
 		"options": {
-			"theme": "YOURTHEMENAME" // Not used currently
+			"theme": "YOURTHEMENAME" // Not used currently, maybe later
 		}
 	}
 }
